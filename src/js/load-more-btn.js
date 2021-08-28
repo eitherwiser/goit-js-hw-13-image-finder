@@ -18,7 +18,6 @@ export default function loadMoreBtn() {
 
   function loadMore() {
 
-    fetchImage.query
     fetchImage
       .fetchImg()
       .then(data => {

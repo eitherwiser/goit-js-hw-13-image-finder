@@ -11,7 +11,6 @@ searchForm.addEventListener('submit', onSearch);
 
 export default function onSearch(input) {
   input.preventDefault();
-
   fetchImage.resetPage();
 
   fetchImage.query = input.currentTarget.elements.query.value.trim();
