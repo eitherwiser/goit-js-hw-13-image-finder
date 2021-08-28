@@ -1,4 +1,4 @@
-import './sass/main.scss';
+//import './sass/main.scss';
 import './js/api-pixabay';
 import './js/on-search'
 import './js/renderGalleryContent';

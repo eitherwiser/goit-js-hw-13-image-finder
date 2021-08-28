@@ -7,10 +7,12 @@ export default function loadMoreBtn() {
 
   const btn = document.querySelector('.load-more');
 
-  btn.addEventListener('click', loadMore)
+  btn.addEventListener('click', loadMore);
+
+  const imgCard = document.querySelector('.gallery:last-child');
 
   function scrollContent() {
-    btn.scrollIntoView({
+    imgCard.scrollIntoView({
       behavior: 'smooth',
       block: 'end',
     });
