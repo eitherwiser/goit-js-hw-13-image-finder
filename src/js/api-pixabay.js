@@ -15,9 +15,6 @@ export default class ApiFetchImage {
     const response = await fetch(`${BASE_URL}&q=${localStorage.getItem('searchQuery')}&page=${localStorage.getItem('page')}&per_page=12&key=${API_KEY}`,);
     const data = await response.json();
     this.incrementPage();
-    console.log(this.page);
-    console.log(localStorage.getItem('searchQuery'));
-    console.log(data);
     return data;
   }
 

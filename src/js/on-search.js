@@ -1,5 +1,7 @@
 import renderSearchContent from './renderGalleryContent.js';
 import ApiFetchImage from './api-pixabay.js';
+import ApiNoticeError from './notifications';
+import ApiNoticeSuccess from './notifications';
 
 const gallery = document.querySelector('.gallery');
 
@@ -26,5 +28,4 @@ export default function onSearch(input) {
       gallery.innerHTML = '';
       renderSearchContent(data);
     })
-    .catch(err => console.log(err));
 };

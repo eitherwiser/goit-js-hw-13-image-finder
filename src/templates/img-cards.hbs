@@ -1,32 +1,32 @@
 {{#each this}}
-  <li class="img-card">
-    <div class='photo-card gallery-list__card-thumb img-wrapper'>
-      <img class=".gallery__img" loading='lazy' src='{{webformatURL}}' data-src='{{largeImageURL}}' alt={{id}} height='250px' width='200px' />
-    </div>
+  <li class="gallery__item">
+    <a href="" class='gallery__link gallery-list__card-thumb img-wrapper'>
+      <img class="gallery__image" loading='lazy' src='{{webformatURL}}' data-src='{{largeImageURL}}' alt={{id}}/>
+    </a>
     <div class="statistick-wrapper">
       <ul class="statistick-list">
         <li class="statistick-list__item">
           <p class='statistick-name'>
             <i class='material-icons'>thumb_up</i>
-            {{likes}}
+            &nbsp;{{likes}}&nbsp;&nbsp;
           </p>
         </li>
         <li class="statistick-list__item">
           <p class='statistick-name'>
             <i class='material-icons'>visibility</i>
-            {{views}}
+            &nbsp;{{views}}&nbsp;&nbsp;
           </p>
         </li>
         <li class="statistick-list__item">
           <p class='statistick-name'>
             <i class='material-icons'>comment</i>
-            {{comments}}
+            &nbsp;{{comments}}&nbsp;&nbsp;
           </p>
         </li>
         <li class="statistick-list__item">
           <p class='statistick-name'>
             <i class='material-icons'>cloud_download</i>
-            {{downloads}}
+            &nbsp;{{downloads}}
           </p>
         </li>
       </ul>
