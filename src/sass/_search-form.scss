@@ -1,0 +1,17 @@
+.search-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+
+  input {
+    position: relative;
+    width: 100%;
+  }
+
+  span {
+    position: absolute;
+    margin-left: -22px;
+    z-index: 200;
+  }
+}

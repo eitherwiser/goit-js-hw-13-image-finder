@@ -1,0 +1,39 @@
+.btn {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+
+  color: #636363;
+  background: rgba(0, 0, 0, 0.1);
+
+  transition: 0.25s;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fdfdfd;
+  }
+}
+
+.sidelong {
+  display: block;
+  position: fixed;
+  width: 38px;
+  height: 30px;
+  border-radius: 6px;
+  z-index: 900;
+  left: 8px;
+  opacity: 1;
+}
+
+.back-to-top {
+  bottom: auto;
+  top: 40%;
+}
+
+.load-more {
+  top: auto;
+  bottom: 35%;
+}
